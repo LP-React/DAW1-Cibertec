@@ -1,6 +1,6 @@
 package com.t1.polo.dto;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,14 +17,14 @@ public class TerritoryDTO {
 
 	private Integer territoryID;
 	
-	private String name;
+	private String territoryName;
 	
 	private String countryRegionCode;
 	
-	private String group;
+	private String territoryGroup;
 	
 	private float salesYTD;
 	
-	private Date modifiedDate;
+	private LocalDate modifiedDate;
 	
 }

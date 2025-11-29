@@ -1,6 +1,6 @@
 package com.t1.polo.models;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -20,7 +20,7 @@ public class TerritoryEntity {
 	@Id
 	private Integer territoryID;
 	@Column(length = 50, nullable = false)
-	private String TerritoryName;
+	private String territoryName;
 	@Column(length = 3, nullable = false)
 	private String countryRegionCode;
 	@Column(length = 50, nullable = false)
@@ -28,6 +28,6 @@ public class TerritoryEntity {
 	@Column(nullable = false)
 	private float salesYTD;
 	@Column(unique = true, nullable = false)
-	private Date modifiedDate;
+	private LocalDate modifiedDate;
 	
 }
